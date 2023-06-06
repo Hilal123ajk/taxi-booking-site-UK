@@ -12,7 +12,7 @@
         </div>
         <div class="w-2/3 mx-auto md:w-1/2 lg:w-1/4 px-10 py-5 border-2 md:mx-3 border-gray-400 text-gray-400 bg-blue-600 hover:bg-teal-950 flex m-2">
             <img src="/public/images/icons/currency.png" class="h-5 w-5 invert" alt="">
-            <h3 class="text-white font-bold mx-2">Make a Payment</h3>
+            <a href="/payment-select"><h3 class="text-white font-bold mx-2">Make a Payment</h3></a>
         </div>
         <div class="w-2/3 mx-auto md:w-1/2 lg:w-1/4 px-10 py-5 border-2 md:mx-3 border-gray-400 text-gray-400 bg-orange-600 hover:bg-teal-950 flex m-2">
             <img src="/public/images/icons/currency.png" class="h-5 w-5 invert" alt="">
