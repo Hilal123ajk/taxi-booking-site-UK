@@ -19,7 +19,7 @@
             <h2 class="text-base font-semibold mx-5">To <span class="text-2xl"><?= $_GET['drop-up-location'] ?></span></h2>
         </div>
         <div>
-            <h1>June 05, 2023, 8:55 PM</h1>
+            <h1><?= $current_date_time ?></h1>
         </div>
     </div>
 </div>
@@ -33,59 +33,69 @@
 
         <?php foreach($cars as $car) : ?>
 
-            <div class="w-11/12 md:w-11/12 mx-auto card p-5 my-3 border border-blue-900 rounded-md">
-                <h1 class="text-lg font-bold"><?= $car['name'] ?></h1>
-                <p class="text-gray-500 text-sm my-2">This type of vehicle can accommodate a maximum of:</p>
-                <div class="flex justify-between">
-                    <div class="flex items-center">
-                        <img src="/public/images/icons/people-icon.png" alt="">
-                        <p class="text-xs ml-3"><?= $car['passangers'] ?> Passangers</p>
+            <form action="/booking" method="GET">
+                <div class="w-11/12 md:w-11/12 mx-auto card p-5 my-3 border border-blue-900 rounded-md">
+                    <h1 class="text-lg font-bold"><?= $car['name'] ?></h1>
+                    <p class="text-gray-500 text-sm my-2">This type of vehicle can accommodate a maximum of:</p>
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <img src="/public/images/icons/people-icon.png" alt="">
+                            <p class="text-xs ml-3"><?= $car['passangers'] ?> Passangers</p>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="/public/images/icons/bag-icon.png" alt="">
+                            <p class="text-xs ml-3"><?= $car['large_bags'] ?> Large ones</p>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="/public/images/icons/bag-icon.png" alt="">
+                            <p class="text-xs ml-3"><?= $car['small_bags'] ?> Small</p>
+                        </div>
                     </div>
-                    <div class="flex items-center">
-                        <img src="/public/images/icons/bag-icon.png" alt="">
-                        <p class="text-xs ml-3"><?= $car['large_bags'] ?> Large ones</p>
+                    <!-- Car Image  -->
+                    <img src="/public/images/card-car.png" alt="">
+                    <div class="price my-2 flex justify-end">
+                        <h3 class="text-2xl font-bold">&#163; 
+                            <?php 
+                                if($car['passangers'] === 6)
+                                {
+                                    $result_price = price($distance, 30);
+                                    echo $result_price;
+                                }else if($car['passangers'] === 8)
+                                {
+                                    $result_price = price($distance, 40);
+                                    echo $result_price;
+                                }else{
+                                    echo $distance;
+                                }
+                            ?>
+                        </h3>
                     </div>
-                    <div class="flex items-center">
-                        <img src="/public/images/icons/bag-icon.png" alt="">
-                        <p class="text-xs ml-3"><?= $car['small_bags'] ?> Small</p>
+
+                    <!-- Booking Fields Inputs -->
+
+                    <input type="hidden" name="car-name" value="working">
+
+                    <!-- Submit Button  -->
+                    <div class="flex justify-end">
+                        <button type="submit" class="py-4 px-10 text-white text-xl font-medium rounded-md cursor-pointer bg-lime-600">Book Now</button>
                     </div>
                 </div>
-                <!-- Car Image  -->
-                <img src="/public/images/card-car.png" alt="">
-                <div class="price my-2 flex justify-end">
-                    <h3 class="text-2xl font-bold">&#163; 
-                        <?php 
-                            if($car['passangers'] === 6)
-                            {
-                                $result_price = price($distance, 30);
-                                echo $result_price;
-                            }else if($car['passangers'] === 4)
-                            {
-                                $result_price = price($distance);
-                                echo $result_price;
-                            }
-                        ?>
-                    </h3>
-                </div>
-                <!-- Book Now  -->
-                <div class="flex justify-end">
-                    <button class="py-4 px-10 text-white text-xl font-medium rounded-md cursor-pointer bg-lime-600">Book Now</button>
-                </div>
-            </div>
+            </form>
+            
         <?php endforeach; ?>    
 
     </div>
     <div class="booking-details w-11/12 md:w-2/6 mx-auto mt-6">
         <div>
             <p class="text-xl text-gray-800">Pickup location</p>
-            <input class="text-gray-600 border border-gray-700 rounded-sm py-2 px-3 w-full md:w-11/12 my-2" type="text" placeholder="Luton">
+            <input disabled class="text-gray-600 border border-gray-700 rounded-sm py-2 px-3 w-full md:w-11/12 my-2" type="text" placeholder="<?= $_GET['pick-up-location'] ?>">
         </div>
         <div class="mt-5">
             <p class="text-xl text-gray-800">Dropup location</p>
-            <input class="text-gray-600 border border-gray-700 rounded-sm py-2 px-3 w-full md:w-11/12 my-2" type="text" placeholder="Manchester">
+            <input disabled class="text-gray-600 border border-gray-700 rounded-sm py-2 px-3 w-full md:w-11/12 my-2" type="text" placeholder="<?= $_GET['drop-up-location'] ?>">
         </div>
         <div class="mt-9">
-            <button class="w-11/12 py-4 px-10 text-white text-xl font-medium rounded-md cursor-pointer bg-lime-700">Booking Details</button>
+            <button class="w-11/12 py-4 px-10 text-white text-xl font-medium rounded-md cursor-pointer bg-lime-600">Booking Details</button>
         </div>
     </div>
 </div>

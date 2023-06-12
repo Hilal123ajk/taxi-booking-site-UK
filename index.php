@@ -14,4 +14,6 @@ if ($uri === '') {
     require $root_path . '/Controllers/payment.php';
 } else if (strpos($uri, 'select-vehicle') === 0) {
     require $root_path . '/Controllers/select-vehicle.php';
-}
+} else if (strpos($uri, 'booking') === 0) {
+    require $root_path . '/Controllers/booking.php';
+} 
