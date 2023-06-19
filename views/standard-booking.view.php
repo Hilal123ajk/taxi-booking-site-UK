@@ -17,14 +17,14 @@
                 <img src="/public/images/icons/input-car-icon.png" class="w-11 h-11" alt="">
                 <div class="w-full mx-3">
                     <p class="text-sm text-gray-500">Pick-up Location</p>
-                    <input type="text" name="pick-up-location" class="outline-none ring-0 w-full" placeholder="Luton,United Kingdom">
+                    <input type="text" id="pickUpAutoComplete" name="pick-up-location" class="outline-none ring-0 w-full" placeholder="Luton,United Kingdom">
                 </div>
             </div>
             <div class="w-full bg-white flex items-center py-2 px-2 mx-auto rounded-md border border-gray-500 my-3 md:mx-4">
                 <img src="/public/images/icons/input-car-icon.png" class="w-11 h-11" alt="">
                 <div class="w-full mx-3">
                     <p class="text-sm text-gray-500">Drop-off Location</p>
-                    <input type="text" name="drop-up-location" class="outline-none ring-0 w-full" placeholder="Manchester,United Kingdom">
+                    <input type="text" id="dropUpAutoComplete" name="drop-up-location" class="outline-none ring-0 w-full" placeholder="Manchester,United Kingdom">
                 </div>
             </div>
         </div>
@@ -77,3 +77,48 @@
 
 <script src="/public/js/navbar.js"></script>
 
+
+<!-- Javascript code for google places autocmoplete  -->
+<script>
+        let pickUpAutoComplete;
+        let dropUpAutoComplete;
+
+        
+        /** 
+            * Initializes autocomplete for pick-up and drop-off input fields,
+            * suggesting UK cities and retrieving place details.
+            * Utilizes Google Maps Places API for accurate suggestions.
+        */
+
+        function initAutocomplete() {
+
+            pickUpAutoComplete = new google.maps.places.Autocomplete(
+                document.getElementById('pickUpAutoComplete'),
+                {
+                    types: ['(cities)'],
+                    componentRestrictions: { 'country': ['UK'] },
+                    fields: ['place_id', 'geometry',]
+                }
+            );
+
+            dropUpAutoComplete = new google.maps.places.Autocomplete(
+                document.getElementById('dropUpAutoComplete'),
+                {
+                    types: ['(cities)'],
+                    componentRestrictions: { 'country': ['UK'] },
+                    fields: ['place_id', 'geometry',]
+                }
+            );
+        }
+
+        function loadScript() {
+            const script = document.createElement('script');
+            script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDDqTr8-dih2bgYaG8mRfS4GmXQ6NXwMKs&libraries=places&callback=initAutocomplete";
+            script.defer = true;
+            document.body.appendChild(script);
+        }
+
+        // Replace YOUR_API_KEY with your actual API key
+
+        window.onload = loadScript;
+    </script>
