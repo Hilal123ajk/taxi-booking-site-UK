@@ -15,8 +15,8 @@
     <div class="w-full text-white md:w-10/12 mx-auto md:flex items-center">
         
         <div class="flex my-3">
-            <h2 class="text-base font-semibold">From <span class="text-2xl"><?= $_GET['pick-up-location'] ?></span></h2>
-            <h2 class="text-base font-semibold mx-5">To <span class="text-2xl"><?= $_GET['drop-up-location'] ?></span></h2>
+            <h2 class="text-base font-semibold">From <span class="text-2xl"><?= $form_details['pick-up-location'] ?></span></h2>
+            <h2 class="text-base font-semibold mx-5">To <span class="text-2xl"><?= $form_details['drop-up-location'] ?></span></h2>
         </div>
         <div>
             <h1><?= $current_date_time ?></h1>
@@ -85,19 +85,31 @@
         <?php endforeach; ?>    
 
     </div>
-    <div class="booking-details w-11/12 md:w-2/6 mx-auto mt-6">
-        <div>
-            <p class="text-xl text-gray-800">Pickup location</p>
-            <input disabled class="text-gray-600 border border-gray-700 rounded-sm py-2 px-3 w-full md:w-11/12 my-2" type="text" placeholder="<?= $_GET['pick-up-location'] ?>">
+    
+    <div class="right-side w-11/12 md:w-2/6 my-8 h-1/3 mx-auto bg-teal-950 py-5">
+        <div class="my-8 mx-3 pl-4">
+            <h1 class="text-2xl font-medium text-white">From</h1>
+            <p class="text-white my-1">Manchester</p>
         </div>
-        <div class="mt-5">
-            <p class="text-xl text-gray-800">Dropup location</p>
-            <input disabled class="text-gray-600 border border-gray-700 rounded-sm py-2 px-3 w-full md:w-11/12 my-2" type="text" placeholder="<?= $_GET['drop-up-location'] ?>">
+        <div class="my-8 mx-3 pl-4">
+            <h1 class="text-2xl font-medium text-white">To</h1>
+            <p class="text-white my-1">Luton</p>
         </div>
-        <div class="mt-9">
-            <button class="w-11/12 py-4 px-10 text-white text-xl font-medium rounded-md cursor-pointer bg-lime-600">Booking Details</button>
+        <div class="my-8 mx-3 pl-4">
+            <h1 class="text-2xl font-medium text-white">Vehicle</h1>
+            <p class="text-white my-1">Estate Car</p>
         </div>
-    </div>
+        <div class="my-8 mx-3 pl-4">
+            <h1 class="text-2xl font-medium text-white">Duration</h1>
+            <p class="text-white my-1"><?php echo $duration ?></p>
+        </div>
+        <div class="my-8 mx-3 pl-4">
+            <h1 class="text-2xl font-medium text-white">Total Cost</h1>
+            <p class="text-white my-1">&#163; 1733</p>
+        </div>
+        <div></div>
+    </div>  
+    
 </div>
 
 <!-- Select Vehicle Section  -->

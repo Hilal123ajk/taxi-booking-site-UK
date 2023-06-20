@@ -17,14 +17,14 @@
                 <img src="/public/images/icons/input-car-icon.png" class="w-11 h-11" alt="">
                 <div class="w-full mx-3">
                     <p class="text-sm text-gray-500">Pick-up Location</p>
-                    <input type="text" id="pickUpAutoComplete" name="pick-up-location" class="outline-none ring-0 w-full" placeholder="Luton,United Kingdom">
+                    <input type="text" id="pickUpAutoComplete" name="pick-up-location" class="outline-none ring-0 w-full" placeholder="Luton,United Kingdom" required>
                 </div>
             </div>
             <div class="w-full bg-white flex items-center py-2 px-2 mx-auto rounded-md border border-gray-500 my-3 md:mx-4">
                 <img src="/public/images/icons/input-car-icon.png" class="w-11 h-11" alt="">
                 <div class="w-full mx-3">
                     <p class="text-sm text-gray-500">Drop-off Location</p>
-                    <input type="text" id="dropUpAutoComplete" name="drop-up-location" class="outline-none ring-0 w-full" placeholder="Manchester,United Kingdom">
+                    <input type="text" id="dropUpAutoComplete" name="drop-up-location" class="outline-none ring-0 w-full" placeholder="Manchester,United Kingdom" required>
                 </div>
             </div>
         </div>
