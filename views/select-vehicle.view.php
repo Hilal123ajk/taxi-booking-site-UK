@@ -10,13 +10,21 @@
 
 <!-- Select Vehicle Banner  -->
 
-<div style="background-color: #5C6B78;" class="select-car-banner flex flex-col py-10 px-3">
+<div style="background-color: #042F2E;" class="select-car-banner flex flex-col py-10 px-3">
     <h2 class="w-full text-3xl text-white font-bold md:w-10/12 mx-auto">Select your car</h2>
     <div class="w-full text-white md:w-10/12 mx-auto md:flex items-center">
         
         <div class="flex my-3">
-            <h2 class="text-base font-semibold">From <span class="text-2xl"><?= $form_details['pick-up-location'] ?></span></h2>
-            <h2 class="text-base font-semibold mx-5">To <span class="text-2xl"><?= $form_details['drop-up-location'] ?></span></h2>
+            <h2 class="text-base font-semibold">From <span class="text-2xl"><?php
+            if (isset($form_details['pick-up-location'])) {
+                echo $form_details['pick-up-location'];
+            }
+            ?></span></h2>
+            <h2 class="text-base font-semibold mx-5">To <span class="text-2xl"><?php
+            if (isset($form_details['drop-up-location'])) {
+                echo $form_details['drop-up-location'];
+            }
+            ?></span></h2>
         </div>
         <div>
             <h1><?= $current_date_time ?></h1>
@@ -65,7 +73,10 @@
                                     $result_price = price($distance, 40);
                                     echo $result_price;
                                 }else{
-                                    echo $distance;
+                                    if(isset($distance))
+                                    {
+                                        echo $distance;
+                                    }
                                 }
                             ?>
                         </h3>
@@ -89,11 +100,19 @@
     <div class="right-side w-11/12 md:w-2/6 my-8 h-1/3 mx-auto bg-teal-950 py-5">
         <div class="my-8 mx-3 pl-4">
             <h1 class="text-2xl font-medium text-white">From</h1>
-            <p class="text-white my-1">Manchester</p>
+            <p class="text-white my-1"><?php
+            if (isset($form_details['pick-up-location'])) {
+                echo $form_details['pick-up-location'];
+            }
+            ?></p>
         </div>
         <div class="my-8 mx-3 pl-4">
             <h1 class="text-2xl font-medium text-white">To</h1>
-            <p class="text-white my-1">Luton</p>
+            <p class="text-white my-1"><?php
+            if (isset($form_details['drop-up-location'])) {
+                echo $form_details['drop-up-location'];
+            }
+            ?></p>
         </div>
         <div class="my-8 mx-3 pl-4">
             <h1 class="text-2xl font-medium text-white">Vehicle</h1>
@@ -101,13 +120,9 @@
         </div>
         <div class="my-8 mx-3 pl-4">
             <h1 class="text-2xl font-medium text-white">Duration</h1>
-            <p class="text-white my-1"><?php echo $duration ?></p>
+            <p class="text-white my-1"><?php if(isset($distance)){echo $duration;} ?></p>
         </div>
-        <div class="my-8 mx-3 pl-4">
-            <h1 class="text-2xl font-medium text-white">Total Cost</h1>
-            <p class="text-white my-1">&#163; 1733</p>
-        </div>
-        <div></div>
+        
     </div>  
     
 </div>

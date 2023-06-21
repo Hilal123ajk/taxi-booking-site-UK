@@ -62,10 +62,14 @@ $current_date_time = date('F d, Y, g:i A');
 
 <?php
 
-$distance_in_string = $_COOKIE['distance'];
-$duration = $_COOKIE['duration'];
 
-$distance = intval($distance_in_string);
+if(isset($_COOKIE['distance']) && isset($_COOKIE['duration'])){
+    $distance_in_string = $_COOKIE['distance'];
+    $duration = $_COOKIE['duration'];
+
+    $distance = intval($distance_in_string);
+}
+
 
 require $root_path . '/views/select-vehicle.view.php'; 
 
