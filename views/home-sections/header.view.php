@@ -5,11 +5,11 @@
             <div class="md:flex md:ml-7">
                 <div class="flex text-white px-2">
                     <img src="/public/images/icons/email-icon.png" class="invert w-5 h-5 mx-2" alt="">
-                    <p>info@a1taxis.net</p>
+                    <p>hilaldev123@gmail.com</p>
                 </div>
                 <div class="flex text-white px-2">
                     <img src="/public/images/icons/phone-icon.png" class="invert w-5 h-5 mx-2" alt="">
-                    <p>01727 866666</p>
+                    <p>0336-7126804</p>
                 </div>
                 
             </div>

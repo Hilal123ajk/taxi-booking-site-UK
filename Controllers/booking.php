@@ -1,8 +1,9 @@
 <?php
 
-var_dump($_POST);
 
-$price = 230;
+$distance_string = $_POST['hiddenDistance'];
+
+$distance = intval($distance_string);
 
 require_once('vendor/autoload.php');
 
@@ -14,9 +15,10 @@ $session = \Stripe\Checkout\Session::create([
     'price_data' => [
     'currency' => 'usd',
     'product_data' => [
-    'name' => 'Car Booking'
+    'name' => 'Car Booking',
+    "description" => $_POST['car-name'] . " From " . $_POST['pick-up-location'] . " To " . $_POST['drop-up-location']
     ],
-    'unit_amount' => $price * 100,
+    'unit_amount' => $distance * 100,
     ],
     'quantity' => 1,
     ]],
@@ -40,8 +42,6 @@ require $root_path . '/views/booking.vew.php';
 
     formId.addEventListener("submit", function (e) {
         e.preventDefault();
-
-        alert("working");
 
         stripe.redirectToCheckout({
             sessionId: "<?php echo $session->id; ?>"

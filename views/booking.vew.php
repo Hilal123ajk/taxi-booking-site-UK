@@ -118,7 +118,13 @@
         </div>
         <div class="my-8 mx-3 pl-4">
             <h1 class="text-2xl font-medium text-white">Total Cost</h1>
-            <p class="text-white my-1">&#163; 1733</p>
+            <p class="text-white my-1">&#163; 
+                <?php if(isset($distance))
+                    {
+                        echo $distance;
+                    }
+                ?>
+            </p>
         </div>
         <div></div>
     </div>  

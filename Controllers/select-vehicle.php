@@ -50,6 +50,15 @@ $current_date_time = date('F d, Y, g:i A');
                 console.log(duration);
                 document.cookie = `distance = ${distance}`;
                 document.cookie = `duration = ${duration}`;
+
+                var hiddenInput = document.createElement('input');
+                // hiddenInput.type = 'hidden';
+                hiddenInput.name = 'hiddenDistance';
+                hiddenInput.value = distance;
+
+                var container = document.getElementById('container');
+                container.appendChild(hiddenInput);
+
                 
             } else {
                 console.log('Distance matrix request failed. Status:', status);

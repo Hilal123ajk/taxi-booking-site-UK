@@ -21,10 +21,12 @@
         <!-- Car Image  -->
         <img src="/public/images/card-car.png" alt="">
         <!-- Book Now  -->
+        <a href="standard-booking">
         <div class="flex justify-around items-center bg-slate-200 py-4 px-2 rounded-lg border-b-4 border-blue-900">
             <h3 class="text-base text-blue-700 font-medium">Book Now</h3>
             <img src="/public/images/icons/right-arrow-icon.png" class="w-7 h-7" alt="">
         </div>
+        </a>
     </div>
 
     <div class="card px-5 my-3 md:w-1/3">
@@ -47,10 +49,12 @@
         <!-- Car Image  -->
         <img src="/public/images/card-car.png" alt="">
         <!-- Book Now  -->
+        <a href="standard-booking">
         <div class="flex justify-around items-center bg-slate-200 py-4 px-2 rounded-lg border-b-4 border-blue-900">
             <h3 class="text-base text-blue-700 font-medium">Book Now</h3>
             <img src="/public/images/icons/right-arrow-icon.png" class="w-7 h-7" alt="">
         </div>
+        </a>
     </div>
 
     <div class="card px-5 my-3 md:w-1/3">
@@ -73,11 +77,13 @@
         <!-- Car Image  -->
         <img src="/public/images/card-car.png" alt="">
         <!-- Book Now  -->
+        <a href="standard-booking">
         <div class="flex justify-around items-center bg-slate-200 py-4 px-2 rounded-lg border-b-4 border-blue-900">
             <h3 class="text-base text-blue-700 font-medium">Book Now</h3>
             <img src="/public/images/icons/right-arrow-icon.png" class="w-7 h-7" alt="">
         </div>
+        </a>
     </div>
-   
+    
 
 </div>

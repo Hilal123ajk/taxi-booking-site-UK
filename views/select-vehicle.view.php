@@ -86,10 +86,12 @@
 
                     <!-- Booking Fields Inputs -->
 
-                    <input type="hidden" name="car-name" value="<?= $car['name'] ?>">
-                    
-                    <input type="hidden" name="pick-up-location" value="<?= $form_details['pick-up-location']?>">  
-                    <input type="hidden" name="drop-up-location" value="<?= $form_details['drop-up-location']?>">          
+                    <div id="container">
+                        <input type="hidden" name="car-name" value="<?= $car['name'] ?>">
+                        
+                        <input type="hidden" name="pick-up-location" value="<?= $form_details['pick-up-location']?>">  
+                        <input type="hidden" name="drop-up-location" value="<?= $form_details['drop-up-location']?>">  
+                    </div>        
                     <!-- Submit Button  -->
                     <div class="flex justify-end">
                         <button type="submit" class="py-4 px-10 text-white text-xl font-medium rounded-md cursor-pointer bg-lime-600">Book Now</button>
