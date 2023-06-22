@@ -2,7 +2,7 @@
 
 require $root_path . '/Core/Database.php';
 
-$form_details = $_GET;
+$form_details = $_POST;
 
 $db = new Database();
 $cars = $db->query('select * from cars');

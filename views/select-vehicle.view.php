@@ -41,7 +41,7 @@
 
         <?php foreach($cars as $car) : ?>
 
-            <form action="/booking" method="GET">
+            <form action="/booking" method="POST">
                 <div class="w-11/12 md:w-11/12 mx-auto card p-5 my-3 border border-blue-900 rounded-md">
                     <h1 class="text-lg font-bold"><?= $car['name'] ?></h1>
                     <p class="text-gray-500 text-sm my-2">This type of vehicle can accommodate a maximum of:</p>
@@ -72,10 +72,12 @@
                                 {
                                     $result_price = price($distance, 40);
                                     echo $result_price;
+                                    
                                 }else{
-                                    if(isset($distance))
+                                    $result_price = price($distance);
+                                    if(isset($result_price))
                                     {
-                                        echo $distance;
+                                        echo $result_price;
                                     }
                                 }
                             ?>
@@ -84,8 +86,10 @@
 
                     <!-- Booking Fields Inputs -->
 
-                    <input type="hidden" name="car-name" value="working">
-
+                    <input type="hidden" name="car-name" value="<?= $car['name'] ?>">
+                    
+                    <input type="hidden" name="pick-up-location" value="<?= $form_details['pick-up-location']?>">  
+                    <input type="hidden" name="drop-up-location" value="<?= $form_details['drop-up-location']?>">          
                     <!-- Submit Button  -->
                     <div class="flex justify-end">
                         <button type="submit" class="py-4 px-10 text-white text-xl font-medium rounded-md cursor-pointer bg-lime-600">Book Now</button>

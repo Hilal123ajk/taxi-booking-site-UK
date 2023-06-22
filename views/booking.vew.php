@@ -19,86 +19,102 @@
     <div class="left-side w-full md:w-3/5 mx-auto p-5">
 
         <!-- Pickup Date And Time  -->
-        <div class="pickup-data-time border border-gray-600 bg-gray-100 px-2 py-8 relative my-3">
-            <h1 class="absolute top-0 text-xl font-medium my-2 -mb-2">Pickup date and time</h1>
-            <div class="md:flex justify-between">
-                <div>
-                    <p class="text-base font-medium text-gray-700 my-2">Date</p>
-                    <input class="w-full p-2 border border-gray-600 rounded-sm" type="date">
-                </div>
-                <div>
-                    <p class="text-base font-medium text-gray-700 my-2">Hours</p>
-                    <select class="w-full px-7 py-2 text-left border border-gray-600 rounded-sm" name="number">
-                        <?php
-                            for ($i = 0; $i <= 24; $i++) {
+        <form action="" id="form-id">
+
+        
+            <div class="pickup-data-time border border-gray-600 bg-gray-100 px-2 py-8 relative my-3">
+                <h1 class="absolute top-0 text-xl font-medium my-2 -mb-2">Pickup date and time</h1>
+                <div class="md:flex justify-between">
+                    <div>
+                        <p class="text-base font-medium text-gray-700 my-2">Date</p>
+                        <input class="w-full p-2 border border-gray-600 rounded-sm" type="date">
+                    </div>
+                    <div>
+                        <p class="text-base font-medium text-gray-700 my-2">Hours</p>
+                        <select class="w-full px-7 py-2 text-left border border-gray-600 rounded-sm" name="number" required>
+                            <?php
+                                for ($i = 0; $i <= 24; $i++) {
+                                    echo "<option value='$i'>$i</option>";
+                                }
+                            ?>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="text-base font-medium text-gray-700 my-2">Minutes</p>
+                        <select class="w-full px-7 py-2 text-left border border-gray-600 rounded-sm" name="number" reguired>
+                            <?php
+                            for ($i = 0; $i <= 60; $i++) {
                                 echo "<option value='$i'>$i</option>";
                             }
-                        ?>
-                    </select>
-                </div>
-                <div>
-                    <p class="text-base font-medium text-gray-700 my-2">Minutes</p>
-                    <select class="w-full px-7 py-2 text-left border border-gray-600 rounded-sm" name="number">
-                        <?php
-                        for ($i = 0; $i <= 60; $i++) {
-                            echo "<option value='$i'>$i</option>";
-                        }
-                        ?>
-                    </select>
-                    
+                            ?>
+                        </select>
+                        
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="pickup-data-time border border-gray-600 bg-gray-100 px-2 py-8 relative my-3">
-            <h1 class="absolute top-0 text-xl font-medium my-2 -mb-2">Personal Information</h1>
-            <div class="md:flex justify-between">
-                <div>
-                    <p class="text-base font-medium text-gray-700 my-2">Passanger Name</p>
-                    <input class="w-full p-2 border border-gray-600 rounded-sm" type="text">
-                </div>
-                <div>
-                    <p class="text-base font-medium text-gray-700 my-2">Email</p>
-                    <input class="w-full p-2 border border-gray-600 rounded-sm" type="email">
-                </div>
-                <div>
-                    <p class="text-base font-medium text-gray-700 my-2">Phone Number</p>
-                    <input class="w-full p-2 border border-gray-600 rounded-sm" type="text" placeholder="0300-0002233">
+            <div class="pickup-data-time border border-gray-600 bg-gray-100 px-2 py-8 relative my-3">
+                <h1 class="absolute top-0 text-xl font-medium my-2 -mb-2">Personal Information</h1>
+                <div class="md:flex justify-between">
+                    <div>
+                        <p class="text-base font-medium text-gray-700 my-2">Passanger Name</p>
+                        <input class="w-full p-2 border border-gray-600 rounded-sm" type="text" required>
+                    </div>
+                    <div>
+                        <p class="text-base font-medium text-gray-700 my-2">Email</p>
+                        <input class="w-full p-2 border border-gray-600 rounded-sm" type="email" required>
+                    </div>
+                    <div>
+                        <p class="text-base font-medium text-gray-700 my-2">Phone Number</p>
+                        <input class="w-full p-2 border border-gray-600 rounded-sm" type="text" placeholder="0300-0002233" required>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Payment Details  -->
 
-        <!-- <div class="card-details border border-gray-600 bg-gray-100 px-2 py-8 relative my-3">
-        <h1 class="absolute top-0 text-xl font-medium my-2 -mb-2">Card Details</h1>
-            <div class="py-5">
-                <input class="w-full p-2 border border-gray-600 rounded-sm" type="number" placeholder="1234 1234 1234 1234">
-                <input class="w-1/2 p-2 border border-gray-600 rounded-sm my-3" type="date" placeholder="MM / YY">
-                <input class="w-1/3 p-2 border border-gray-600 rounded-sm" type="number" placeholder="CVC" min="3" max="3">
+            <div class="booking-button">
+                <button type="submit" class="w-full py-8 text-white cursor-pointer px-5 rounded-md font-bold text-3xl bg-green-600 hover:bg-gray-800 text-start">
+                    Complete Booking
+                </button>
+
             </div>
-        </div> -->
 
-        <div class="booking-button">
-            <button class="w-full py-8 text-white cursor-pointer px-5 rounded-md font-bold text-3xl bg-green-600 hover:bg-gray-800 text-start">
-                Complete Booking
-            </button>
-
-        </div>
+        </form>
 
     </div>
     <div class="right-side w-11/12 md:w-2/6 my-8 h-1/3 mx-auto bg-teal-950 py-5">
         <div class="my-8 mx-3 pl-4">
             <h1 class="text-2xl font-medium text-white">From</h1>
-            <p class="text-white my-1">Manchester</p>
+            <p class="text-white my-1">
+                <?php 
+                    if(isset($_POST['pick-up-location']))
+                    {
+                        echo $_POST['pick-up-location'];
+                    } 
+                ?>
+            </p>
         </div>
         <div class="my-8 mx-3 pl-4">
             <h1 class="text-2xl font-medium text-white">To</h1>
-            <p class="text-white my-1">Luton</p>
+            <p class="text-white my-1">
+                <?php 
+                    if(isset($_POST['drop-up-location']))
+                    {
+                        echo $_POST['drop-up-location'];
+                    } 
+                ?>
+            </p>
         </div>
         <div class="my-8 mx-3 pl-4">
             <h1 class="text-2xl font-medium text-white">Vehicle</h1>
-            <p class="text-white my-1">Estate Car</p>
+            <p class="text-white my-1">
+                <?php 
+                    if(isset($_POST['car-name']))
+                    {
+                        echo $_POST['car-name'];
+                    } 
+                ?>
+            </p>
         </div>
         <div class="my-8 mx-3 pl-4">
             <h1 class="text-2xl font-medium text-white">Total Cost</h1>

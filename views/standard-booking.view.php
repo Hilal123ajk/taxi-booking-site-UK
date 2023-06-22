@@ -11,7 +11,7 @@
         <h3 class="text-white text-lg md:text-2xl text-center mx-3">Satisfied and Reliable Taxi Service and airport transfers in St Albans</h3>
     </div>
 
-    <form action="/select-vehicle" method="GET" class="mt-8">
+    <form action="/select-vehicle" method="POST" class="mt-8">
         <div class="w-11/12 md:w-10/12 mx-auto md:flex">
             <div class="w-full bg-white flex items-center py-2 px-2 mx-auto rounded-md border border-gray-500 my-3 md:mx-4">
                 <img src="/public/images/icons/input-car-icon.png" class="w-11 h-11" alt="">
