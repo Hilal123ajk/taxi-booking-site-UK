@@ -10,6 +10,25 @@
     <h1 class="text-5xl font-bold mb-4">Thank You!</h1>
     <p class="text-lg text-gray-800">Thanks for taking our online taxi booking services.</p>
     <p class="text-lg text-blue-600">You will be notified via email</p>
+
+    <p class="text-lg text-gray-800">
+      Your transaction id : 
+      <span class="text-sm"><?php 
+        if(isset($payment_id)){
+          echo $payment_id;
+        }
+      ?>
+      </span>
+    </p>
+    <p class="text-lg text-gray-800">
+      Total Amount : 
+      <?php 
+        if(isset($amount)){
+          echo $amount / 100;
+        }
+      ?>
+      &#163;
+    </p>
   </div>
 </section>
 

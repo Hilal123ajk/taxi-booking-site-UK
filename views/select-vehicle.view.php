@@ -66,8 +66,12 @@
                             <?php 
                                 if($car['passangers'] === 6)
                                 {
-                                    $result_price = price($distance, 30);
-                                    echo $result_price;
+                                    if(isset($distance))
+                                    {
+                                        $result_price = price($distance, 30);
+                                        echo $result_price;
+                                    }
+                                    
                                 }else if($car['passangers'] === 8)
                                 {
                                     $result_price = price($distance, 40);
