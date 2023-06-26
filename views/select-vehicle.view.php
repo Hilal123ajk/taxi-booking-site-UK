@@ -70,18 +70,29 @@
                                     {
                                         $result_price = price($distance, 30);
                                         echo $result_price;
+                                    }else{
+                                        echo 93;
                                     }
                                     
                                 }else if($car['passangers'] === 8)
                                 {
-                                    $result_price = price($distance, 40);
-                                    echo $result_price;
+                                    if(isset($distance))
+                                    {
+                                        $result_price = price($distance, 40);
+                                        echo $result_price;
+                                    }else{
+                                        echo 85;
+                                    }
+                                    
                                     
                                 }else{
-                                    $result_price = price($distance);
-                                    if(isset($result_price))
+                                    
+                                    if(isset($distance))
                                     {
+                                        $result_price = price($distance);
                                         echo $result_price;
+                                    }else{
+                                        echo 85;
                                     }
                                 }
                             ?>
@@ -130,7 +141,7 @@
         </div>
         <div class="my-8 mx-3 pl-4">
             <h1 class="text-2xl font-medium text-white">Duration</h1>
-            <p class="text-white my-1"><?php if(isset($distance)){echo $duration;} ?></p>
+            <p class="text-white my-1"><?php if(isset($duration)){echo $duration;} ?></p>
         </div>
         
     </div>  
