@@ -7,7 +7,7 @@ $root_path = __DIR__;
 require $root_path . "/Core/functions.php";
 
 if ($uri === '') {
-    require 'controllers/index.php';
+    require $root_path . '/views/index.view.php';
 } else if (strpos($uri, 'standard-booking') === 0) {
     require $root_path . '/Controllers/standard-booking.php';
 } else if (strpos($uri, 'payment-select') === 0) {
@@ -18,4 +18,12 @@ if ($uri === '') {
     require $root_path . '/Controllers/booking.php';
 } else if (strpos($uri, 'thanks') === 0) {
     require $root_path . '/Controllers/thank-you.php';
+} else if (strpos($uri, 'pay') === 0) {
+    require $root_path . '/Controllers/pay.php';
+} else if (strpos($uri, 'corporate-booking') === 0) {
+    require $root_path . '/Controllers/corporate-booking.php';
+} else if (strpos($uri, 'airport-transfer') === 0) {
+    require $root_path . '/Controllers/airport-transfer.php';
+} else if (strpos($uri, 'cities') === 0) {
+    require $root_path . '/Controllers/cities.php';
 } 

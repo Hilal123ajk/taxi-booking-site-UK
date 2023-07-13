@@ -7,6 +7,10 @@
     <title>Taxi Booking Site</title>
     <script src="https://js.stripe.com/v3/"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--    Favicon-->
+    <link rel="icon" type="image/png" href="/public/images/icons/fav-icon.png" />
+
     <style>
 
         /* Toggling Menu On Small Devices */

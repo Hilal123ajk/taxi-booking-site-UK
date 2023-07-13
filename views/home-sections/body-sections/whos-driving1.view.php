@@ -1,10 +1,12 @@
 <div class="md:flex my-5 px-5 md:p-5">
     <div class="mx-5 my-2 md:w-1/2">
-        <h1 class="text-2xl font-bold my-2">Who's Driving <span class="text-green-700">A1 Taxis</span></h1>
+        <h1 class="text-2xl font-bold my-2">Who's Driving <span class="text-green-700">VIP minbus hire</span></h1>
         <p class="my-3">
-        Our drivers, office staff and technical teams are responsive and carry out their assigned tasks with the obligation. We train our drivers for every possible hurdle on the busiest roads of the UK so that your time must not be affected.
-        <br><br>
-        Enduring our responsibilities are mandatory for us and your satisfaction. You will find A1 Taxis services updated and well informed about UK traffic Laws and Policies.
+        
+        Our responsive drivers, office staff, and technical teams fulfill their duties diligently. We train our drivers to overcome challenges on busy UK roads, ensuring minimal impact on your time.
+        <br>
+        <br>
+        Fulfilling our responsibilities is mandatory, prioritizing your satisfaction. VIP minibus hire services stay updated and well-informed about UK traffic laws and policies.
         </p>
     </div>
     <div class="mx-5 my-4">

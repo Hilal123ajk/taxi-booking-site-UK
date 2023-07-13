@@ -1,4 +1,4 @@
-<div style="background-color: #559426;" class="md:flex md:items-center">
+<div style="background-color: #001C30;" class="md:flex md:items-center">
     <div class="flex flex-wrap justify-between mx-5 md:w-1/2">
         <div>
             <div class="text-center">
@@ -27,6 +27,6 @@
         </div>
     </div>
     <div>
-        <img src="/public/images/wheel-chair-car.png" alt="">
+        <img src="/public/images/wheel-chair-car.jpg" alt="">
     </div>
 </div>

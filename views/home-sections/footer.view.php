@@ -1,6 +1,6 @@
  <!-- Footer  -->
 
- <div style="background-color: #5CA02A;" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+ <div style="background-color: #001C30;" class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="p-4">
             <h1 class="text-xl font-bold text-white">Quick Links</h1>
             <ul class="text-white md:text-lg">
@@ -60,6 +60,6 @@
         
     </div>
 
-    <div style="background-color: #07212A;" class="text-white p-8">
+    <div style="background-color: #001C30;" class="text-white p-8">
         <p class="px-5">Copyright 2021, All Rights Reserved.</p>
     </div>

@@ -1,4 +1,4 @@
-<div style="background-color: #F0F2F4;" class="py-6 px-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+<div style="background-color: #DAFFFB;" class="py-6 px-4 grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="border-none md:border-r md:border-gray-300 px-3">
             <img src="/public/images/icons/complaint-icon.png" alt="">
             <h2 class="text-2xl font-bold my-1">Complaint</h2>

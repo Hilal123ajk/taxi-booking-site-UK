@@ -23,13 +23,13 @@ $session = \Stripe\Checkout\Session::create([
     'quantity' => 1,
     ]],
     'mode' => 'payment',
-    'success_url' => 'http://localhost:8080/thanks?session_id={CHECKOUT_SESSION_ID}',
+    'success_url' => 'https://vipminibushire.co.uk/thanks?session_id={CHECKOUT_SESSION_ID}',
     'cancel_url' => 'https://example.com/cancel',
 ]); 
 
 $current_date_time = date('F d, Y, g:i A');
 
-require $root_path . '/views/booking.vew.php';
+require $root_path . '/views/booking.view.php';
 
 ?>
 
