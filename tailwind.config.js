@@ -3,11 +3,12 @@ module.exports = {
   content: [],
   theme: {
     extend: {
-      height: {
-        '128': '32rem',
+      width: {
+        'width': '30%'
       }
     },
   },
+  variants: {},
   plugins: [],
-}
+};
 

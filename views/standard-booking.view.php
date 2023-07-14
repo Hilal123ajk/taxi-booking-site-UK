@@ -5,10 +5,10 @@
 <!-- Navbar -->
 <?php require $root_path . '/views/home-sections/navbar.view.php'; ?>
 
-<div style="background-color: #173945;" class="py-12">
+<div style="background-color: #001C30;" class="py-12">
     <div class="heading md:mt-10 text-center">
-        <h1 class="text-white text-3xl md:text-5xl font-bold text-center mx-3 md:py-2">St Albans Taxis And <span class="text-lime-500">Transfers</span></h1>
-        <h3 class="text-white text-lg md:text-2xl text-center mx-3">Satisfied and Reliable Taxi Service and airport transfers in St Albans</h3>
+        <h1 class="text-white text-3xl md:text-5xl font-bold text-center mx-3 md:py-2">VIP minibus hire And <span class="text-lime-500">Transfers</span></h1>
+        <h3 class="text-white text-lg md:text-2xl text-center mx-3">Our taxi service and airport transfers in UK are known for their reliability and customer satisfaction.</h3>
     </div>
 
     <form action="/select-vehicle" method="POST" class="mt-8">
@@ -35,17 +35,18 @@
 
 
     <!-- Reviews Section  -->
-    <div class="w-full md:w-1/2 flex justify-center my-5 mx-auto">
+    <!-- Reviews -->
+    <div class="w-full md:w-1/2 flex justify-center mt-5 mx-auto">
         <div class="bg-slate-100 w-1/3 md:w-1/5 mx-3 flex flex-col items-center py-3 rounded-lg">
-            <img src="/public/images/icons/review-icon.png" class="w-28 h-10" alt="">
+            <img src="/public/images/icons/review-icon.png" class="w-10 h-10" alt="">
             <p class="text-black">4.8 out of 5</p>
         </div>
         <div class="bg-slate-100 w-1/3 md:w-1/5 mx-3 flex flex-col items-center py-3 rounded-lg">
-            <img src="/public/images/icons/google-review-icon.png" class="w-28 h-10" alt="">
+            <img src="/public/images/icons/google-review-icon.png" class="w-10 h-10" alt="">
             <p class="text-black">4.8 out of 5</p>
         </div>
         <div class="bg-slate-100 w-1/3 md:w-1/5 mx-3 flex flex-col items-center py-3 rounded-lg">
-            <img src="/public/images/icons/tripadvisor-icon.png" class="w-28 h-10" alt="">
+            <img src="/public/images/icons/trust-pilot-icon.png" class="w-14 h-10" alt="">
             <p class="text-black">4.8 out of 5</p>
         </div>
     </div>

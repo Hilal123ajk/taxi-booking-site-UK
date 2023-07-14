@@ -26,4 +26,8 @@ if ($uri === '') {
     require $root_path . '/Controllers/airport-transfer.php';
 } else if (strpos($uri, 'cities') === 0) {
     require $root_path . '/Controllers/cities.php';
+} else if (strpos($uri, 'services') === 0) {
+    require $root_path . '/Controllers/services.php';
+} else if (strpos($uri, 'contact') === 0) {
+    require $root_path . '/Controllers/contact.php';
 } 

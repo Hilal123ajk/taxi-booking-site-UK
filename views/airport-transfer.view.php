@@ -88,3 +88,5 @@
 
 <!-- HTML Footer  -->
 <?php require $root_path . '/views/partials/footer.view.php'; ?>
+
+<script src="/public/js/navbar.js"></script>

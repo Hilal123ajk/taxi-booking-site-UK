@@ -21,3 +21,14 @@ INSERT INTO `cars` (`id`, `name`, `passangers`, `large_bags`, `small_bags`) VALU
 INSERT INTO `cars` (`id`, `name`, `passangers`, `large_bags`, `small_bags`) VALUES ('2', 'MPV +', '4', '0', '2');
 
 INSERT INTO `cars` (`id`, `name`, `passangers`, `large_bags`, `small_bags`) VALUES ('3', '8 Seater minibus', '8', '6', '4');
+
+
+CREATE TABLE messages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(255),
+  last_name VARCHAR(255),
+  email VARCHAR(255),
+  message TEXT
+);
+
+

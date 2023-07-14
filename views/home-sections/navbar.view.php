@@ -15,9 +15,13 @@
             <li class="text-lg mx-3 cursor-pointer hover:text-gray-700">
                 <a href="/cities">Cities</a>
             </li>
-            <li class="text-lg mx-3 cursor-pointer hover:text-gray-700">Services</li>
-            <li class="text-lg mx-3 cursor-pointer hover:text-gray-700">About Us</li>
-            <li class="text-lg mx-3 cursor-pointer hover:text-gray-700">Contact Us</li>
+            <li class="text-lg mx-3 cursor-pointer hover:text-gray-700">
+                <a href="/services">Services</a>
+            </li>
+            
+            <li class="text-lg mx-3 cursor-pointer hover:text-gray-700">
+                <a href="/contact">Contact Us</a>
+            </li>
         </ul>
     </div>
     
@@ -38,17 +42,15 @@
     <!-- Navbar content goes here -->
     <ul class="py-4">
         <a href="/"><li class="text-white ml-3 mt-1 border-b border-gray-600">Home</li></a>
-        <li class="text-white ml-3 mt-1 border-b border-gray-600">Airport Transfer</li>
-        <li class="text-white ml-3 mt-1 border-b border-gray-600">Cities</li>
-        <li class="text-white ml-3 mt-1 border-b border-gray-600">Services</li>
-        <li class="text-white ml-3 mt-1 border-b border-gray-600">Blog</li>
-        <li class="text-white ml-3 mt-1 border-b border-gray-600">Menu Item 3</li>
-        <li class="text-white ml-3 mt-1 border-b border-gray-600">Contact Us</li>
+        <a href="/airport-transfer"><li class="text-white ml-3 mt-1 border-b border-gray-600">Airport Transfer</li></a>
+        <a href="/cities"><li class="text-white ml-3 mt-1 border-b border-gray-600">Cities</li></a>
+        <a href="/services"><li class="text-white ml-3 mt-1 border-b border-gray-600">Services</li></a>
+        <a href="/contact"><li class="text-white ml-3 mt-1 border-b border-gray-600">Contact Us</li></a>
+        
+        
     </ul>
 </div>
-<div class="flex flex-grow">
-    <!-- Rest of your webpage content goes here -->
-</div>
+
 </div>
 
 <!-- Hidden Navbar ends Here  -->

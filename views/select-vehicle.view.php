@@ -39,6 +39,10 @@
 <div class="cars-section md:flex mt-10">
     <div class="cars w-full md:w-3/5 mx-auto">
 
+        <?php
+            $imgNo = 1;
+        ?>
+
         <?php foreach($cars as $car) : ?>
 
             <form action="/booking" method="POST">
@@ -60,7 +64,7 @@
                         </div>
                     </div>
                     <!-- Car Image  -->
-                    <img src="/public/images/card-car.png" alt="">
+                    <img src="/public/images/select-car/car<?= $imgNo ?>.png" alt="">
                     <div class="price my-2 flex justify-end">
                         <h3 class="text-2xl font-bold">&#163; 
                             <?php 
@@ -113,6 +117,10 @@
                     </div>
                 </div>
             </form>
+
+            <?php 
+                $imgNo++;
+            ?>
             
         <?php endforeach; ?>    
 

@@ -45,7 +45,7 @@
     <div class=" w-full md:w-1/3 mx-4 rounded-md cursor-pointer bg-cyan-700 text-white">
         <img src="/public/images/cities/oxford.png" class="w-full rounded-md" alt="airport-image">
         <h2 class="text-2xl font-medium my-3 px-4">Oxford</h2>
-        <p> Best known globally for its university, this old town is a pleasure to walk around and attracts people from all over the world. </p>
+        <p class="px-4"> Best known globally for its university, this old town is a pleasure to walk around and attracts people from all over the world. </p>
         <p class=" underline my-3 px-4"><a href="/standard-booking">Visit</a></p>
     </div>
 
