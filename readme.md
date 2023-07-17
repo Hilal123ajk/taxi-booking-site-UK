@@ -16,6 +16,16 @@ php -S localhost:8080
 
 **⚠️ Warning:** If you assign ports other than 8080 Thank You page will not Work always give 8080.
 
+### Database Setup
+
+To set up the database for the Online Taxi Booking Site, please follow these steps:
+
+Create a new MySQL database name **taxi-booking** in PHPMyAdmin.
+
+And import database.sql located in the Database folder.
+
+Start the local PHP development environment (e.g., XAMPP, WAMP)
+
 
 ## Usage
 
@@ -34,7 +44,7 @@ You will be redirected to the Stripe payment page, where you need to enter your 
 The Online Taxi Booking Site is built using the following technologies:
 
 #### PHP: 
-The server-side scripting language used for backend functionality.
+The server-side scripting language is used for backend functionality.
 #### MySQL: 
 The relational database management system is used to store application data.
 #### JavaScript: 
@@ -47,13 +57,3 @@ The Online Taxi Booking Site integrates with the following APIs:
 Google Autocomplete API: Used to provide location suggestions during address input.
 Google Matrix API: Utilized for calculating the distance between pickup and drop-off locations.
 Stripe API: Used to process secure payments.
-
-### Database Setup
-
-To set up the database for the Online Taxi Booking Site, please follow these steps:
-
-Create a new MySQL database name **taxi-booking** in PHPMyAdmin.
-
-And import database.sql located in the Database folder.
-
-Start the local PHP development environment (e.g., XAMPP, WAMP)
