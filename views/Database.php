@@ -12,11 +12,6 @@ class Database {
         $username = 'root';
         $password = '';
 
-        // $host = 'localhost';
-        // $dbname = 'vipmbh_taxi-booking';
-        // $username = 'vipmbh';
-        // $password = 'jrVe]D7p^UTV';
-
         try {
             $this->pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

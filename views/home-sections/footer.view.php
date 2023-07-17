@@ -1,65 +1,58 @@
  <!-- Footer  -->
 
- <div style="background-color: #001C30;" class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="p-4">
-            <h1 class="text-xl font-bold text-white">Quick Links</h1>
-            <ul class="text-white md:text-lg">
-                <li class="cursor-pointer hover:text-black">Home</li>
-                <li class="cursor-pointer hover:text-black">Airport Transfer</li>
-                <li class="cursor-pointer hover:text-black">Cities</li>
-                <li class="cursor-pointer hover:text-black">Services</li>
-                <li class="cursor-pointer hover:text-black">About Us</li>
-                <li class="cursor-pointer hover:text-black">Contact Us</li>
-                <li class="cursor-pointer hover:text-black">Sitemap</li>
-                
-            </ul>
-        </div>
-
-        <div class="p-4">
-            <h1 class="text-xl font-bold text-white">Our Services</h1>
-            <ul class="text-white md:text-lg">
-                <li class="cursor-pointer hover:text-black">Baby Seat</li>
-                <li class="cursor-pointer hover:text-black">Flight Monitoring</li>
-                <li class="cursor-pointer hover:text-black">Meet and Greet</li>
-                <li class="cursor-pointer hover:text-black">Business Class</li>
-                <li class="cursor-pointer hover:text-black">Wheelchair Accessibility</li>
-                <li class="cursor-pointer hover:text-black">Courier Service</li>
-                <li class="cursor-pointer hover:text-black">Executive Services</li>
-                
-            </ul>
-        </div>
-
-        <div class="p-4">
-            <h1 class="text-xl font-bold text-white">Nearby Airports</h1>
-            <ul class="text-white md:text-lg">
-        
-                <li class="cursor-pointer hover:text-black">Airport Transfres</li>
-                <li class="cursor-pointer hover:text-black">Luton Airport</li>
-                <li class="cursor-pointer hover:text-black">Gatwick Airport</li>
-                <li class="cursor-pointer hover:text-black">London City Airport</li>
-                <li class="cursor-pointer hover:text-black">Heathrow Airport</li>
-                <li class="cursor-pointer hover:text-black">Stansted Airport</li>
-                
-            </ul>
-        </div>
-
-        <div class="p-4">
-            <h1 class="text-xl font-bold text-white">Cities</h1>
-            <ul class="text-white md:text-lg">
-            
-                <li class="cursor-pointer hover:text-black">HomHarpendene</li>
-                <li class="cursor-pointer hover:text-black">Stevenage</li>
-                <li class="cursor-pointer hover:text-black">Hatfield</li>
-                <li class="cursor-pointer hover:text-black">Dunstable</li>
-                <li class="cursor-pointer hover:text-black">Hitchin</li>
-                <li class="cursor-pointer hover:text-black">Baldock</li>
-                <li class="cursor-pointer hover:text-black">Wheathampstead</li>
-                
-            </ul>
-        </div>
-        
+<footer class="bg-slate-900 text-white">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="/" class="flex items-center">
+                  <img src="/public/images/icons/fav-icon.png" class="h-8 mr-3" alt="FlowBite Logo" />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Caspia Research</span>
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold uppercase text-white">Resources</h2>
+                  <ul class="text-white font-medium">
+                      <li class="mb-4">
+                          <a href="/standard-booking" class="hover:underline">Standard Booking</a>
+                      </li>
+                      <li>
+                          <a href="/corporate-booking" class="hover:underline">Corporate Booking</a>
+                      </li>
+                      <li class="my-2">
+                          <a href="/pay" class="hover:underline">Payment</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Links</h2>
+                  <ul class="text-white dark:text-gray-400 font-medium">
+                      <li class="my-2">
+                          <a href="/" class="hover:underline">Home</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="/airport-transfer" class="hover:underline ">Airprt Transfer</a>
+                      </li>
+                      <li>
+                          <a href="/services" class="hover:underline">Services</a>
+                      </li>
+                      <li class="my-2">
+                          <a href="/cities" class="hover:underline">Cities</a>
+                      </li>
+                      <li class="my-2">
+                          <a href="/contact" class="hover:underline">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+              
+          </div>
+      </div>
+      <hr class="my-6 border-white sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2023 <a href="/public/images/icons/fav-icon.png" class="hover:underline">Caspia Research</a>. All Rights Reserved.
+          </span>
+          
+      </div>
     </div>
+</footer>
 
-    <div style="background-color: #001C30;" class="text-white p-8">
-        <p class="px-5">Copyright 2021, All Rights Reserved.</p>
-    </div>
