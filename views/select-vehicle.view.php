@@ -37,7 +37,8 @@
 <!-- Cars  -->
 
 <div class="cars-section md:flex mt-10">
-    <div class="cars w-full md:w-3/5 mx-auto">
+    
+    <div class="cars w-full md:w-3/6 mx-auto">
 
         <?php
             $imgNo = 1;
@@ -46,7 +47,7 @@
         <?php foreach($cars as $car) : ?>
 
             <form action="/booking" method="POST">
-                <div class="w-11/12 md:w-11/12 mx-auto card p-5 my-3 border border-blue-900 rounded-md">
+                <div class="w-11/12 md:w-4/5 mx-auto card p-5 my-3 border border-blue-900 rounded-md">
                     <h1 class="text-lg font-bold"><?= $car['name'] ?></h1>
                     <p class="text-gray-500 text-sm my-2">This type of vehicle can accommodate a maximum of:</p>
                     <div class="flex justify-between">
@@ -64,7 +65,7 @@
                         </div>
                     </div>
                     <!-- Car Image  -->
-                    <img src="/public/images/select-car/car<?= $imgNo ?>.png" alt="">
+                    <img src="/public/images/select-car/car<?= $imgNo ?>.png" class="w-80" alt="">
                     <div class="price my-2 flex justify-end">
                         <h3 class="text-2xl font-bold">&#163; 
                             <?php 
@@ -126,7 +127,7 @@
 
     </div>
     
-    <div style="background-color: #64CCC5;" class="right-side w-11/12 md:w-2/6 my-8 h-1/3 mx-auto bg-teal-950 py-5">
+    <div style="background-color: #176B87;" class="right-side w-11/12 md:w-2/6 my-8 h-1/3 mx-auto bg-teal-950 py-5">
         <div class="my-8 mx-3 pl-4">
             <h1 class="text-2xl font-medium text-white">From</h1>
             <p class="text-white my-1"><?php

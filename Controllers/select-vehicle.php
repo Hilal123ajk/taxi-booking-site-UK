@@ -54,6 +54,7 @@ $current_date_time = date('F d, Y, g:i A');
                 var hiddenInput = document.createElement('input');
                 // hiddenInput.type = 'hidden';
                 hiddenInput.name = 'hiddenDistance';
+                hiddenInput.type = 'hidden';
                 hiddenInput.value = distance;
 
                 var container = document.getElementById('container');

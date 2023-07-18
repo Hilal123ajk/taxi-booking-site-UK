@@ -34,9 +34,9 @@ class Database {
         return $cars;
     }
 
-    public function insertRecord($query, $message)
+    public function insertRecord($query, $data)
     {
         $this->statement = $this->pdo->prepare($query);
-        $this->statement->execute($message);
+        $this->statement->execute($data);
     }
 }

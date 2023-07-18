@@ -24,10 +24,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
         ];
     }
 
-    if(strlen($message['message']) < 20)
+    if(strlen($message['message']) < 10)
     {
         $message_error = [
-            'message_error' => 'Minimum 20 characters required' 
+            'message_error' => 'Minimum 10 characters required' 
         ];
     }
 

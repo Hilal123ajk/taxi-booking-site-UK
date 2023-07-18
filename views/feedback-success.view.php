@@ -7,13 +7,19 @@
 
 <!-- Feedback completed thanks and response message  -->
 
-<section class="bg-gray-100 py-12">
-  <div class=" mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-extrabold text-gray-900">Thanks for your feedback</h2>
-    <h3 class="mt-4 text-xl font-bold text-gray-700">We have received your response</h3>
-    <p class="mt-2 text-gray-600">We will get back to you as soon as possible.</p>
+<div style="background-color: #F1F5F8;" class="feedback-success text-center w-11/12 md:w-1/2 my-10 mx-auto py-5  shadow-md">
+  <h1 class="text-4xl md:text-6xl font-medium font-serif tracking-tight text-blue-700">Thank You</h1>
+  <div class="flex justify-center">
+    <img src="/public/images/icons/check-mark.png" class="w-16 h-16" alt="tick-icon">
   </div>
-</section>
+  <div class="my-3">
+    <p>Thanks for contacting us we have recieved your response.</p>
+    <p>We will get back to you as soon as possible.</p>
+  </div>
+  <a href="/">
+    <button class="py-3 px-10 mt-10 rounded-lg bg-blue-500 text-white">Go Home</button>
+  </a>
+</div>
 
 
 <?php require 'views/partials/footer.view.php'; ?>

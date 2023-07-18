@@ -22,15 +22,15 @@
         <form action="" id="form-id">
 
         
-            <div style="background-color: #64CCC5;" class="pickup-data-time border border-teal-600 bg-gray-100 px-2 py-10 relative my-3">
-                <h1 class="absolute top-0 text-xl font-medium my-2 -mb-2">Pickup date and time</h1>
+            <div style="background-color: #176B87;" class="pickup-data-time border border-teal-600 bg-white px-5 py-14 relative my-3 rounded-md">
+                <h1 class="absolute top-0 text-xl font-medium my-2 -mb-2 text-white">Pickup date and time</h1>
                 <div class="md:flex justify-between">
                     <div>
-                        <p class="text-base font-medium text-gray-700 my-2">Date</p>
-                        <input class="w-full p-2 border border-gray-600 rounded-sm" type="date">
+                        <p class="text-base font-medium text-white my-2">Date</p>
+                        <input class="w-full p-2 border border-white rounded-sm" type="date">
                     </div>
                     <div>
-                        <p class="text-base font-medium text-gray-700 my-2">Hours</p>
+                        <p class="text-base font-medium text-white my-2">Hours</p>
                         <select class="w-full px-7 py-2 text-left border border-gray-600 rounded-sm" name="number" required>
                             <?php
                                 for ($i = 0; $i <= 24; $i++) {
@@ -40,8 +40,8 @@
                         </select>
                     </div>
                     <div>
-                        <p class="text-base font-medium text-gray-700 my-2">Minutes</p>
-                        <select class="w-full px-7 py-2 text-left border border-gray-600 rounded-sm" name="number" reguired>
+                        <p class="text-base font-medium text-white my-2">Minutes</p>
+                        <select class="w-full px-7 py-2 text-left border border-white rounded-sm" name="number" reguired>
                             <?php
                             for ($i = 0; $i <= 60; $i++) {
                                 echo "<option value='$i'>$i</option>";
@@ -53,20 +53,20 @@
                 </div>
             </div>
 
-            <div style="background-color: #64CCC5;" class="pickup-data-time border bg-gray-100 px-2 py-8 relative my-3">
-                <h1 class="absolute top-0 text-xl font-medium my-2 -mb-2">Personal Information</h1>
-                <div class="md:flex justify-between">
+            <div style="background-color: #176B87;" class="pickup-data-time border px-5 py-6 relative my-3 rounded-md">
+                <h1 class="absolute top-0 text-xl font-medium my-2 -mb-2 text-white">Personal Information</h1>
+                <div class="md:flex justify-between my-5">
                     <div>
-                        <p class="text-base font-medium text-gray-700 my-2">Passanger Name</p>
-                        <input class="w-full p-2 border border-gray-600 rounded-sm" type="text" required>
+                        <p class="text-base font-medium text-white my-2">Passanger Name</p>
+                        <input class="w-full p-2 border border-white rounded-sm" type="text" placeholder="John Doe" required>
                     </div>
                     <div>
-                        <p class="text-base font-medium text-gray-700 my-2">Email</p>
-                        <input class="w-full p-2 border border-gray-600 rounded-sm" type="email" required>
+                        <p class="text-base font-medium text-white my-2">Email</p>
+                        <input class="w-full p-2 border border-gray-600 rounded-sm" type="email" placeholder="john@gmail.com" required>
                     </div>
                     <div>
-                        <p class="text-base font-medium text-gray-700 my-2">Phone Number</p>
-                        <input class="w-full p-2 border border-gray-600 rounded-sm" type="text" placeholder="0300-0002233" required>
+                        <p class="text-base font-medium text-white my-2">Phone Number</p>
+                        <input class="w-full p-2 border border-white rounded-sm" type="text" placeholder="0300-0002233" required>
                     </div>
                 </div>
             </div>
@@ -82,10 +82,10 @@
         </form>
 
     </div>
-    <div style="background-color: #64CCC5" class="right-side w-11/12 md:w-2/6 my-8 h-1/3 mx-auto py-5">
+    <div style="background-color: #176B87" class="right-side w-11/12 md:w-2/6 my-8 h-1/3 mx-auto py-5 rounded-md">
         <div class="my-8 mx-3 pl-4">
-            <h1 class="text-2xl font-medium">From</h1>
-            <p class=" my-1">
+            <h1 class="text-2xl font-medium text-white">From</h1>
+            <p class=" my-1 text-white">
                 <?php 
                     if(isset($_POST['pick-up-location']))
                     {
@@ -95,8 +95,8 @@
             </p>
         </div>
         <div class="my-8 mx-3 pl-4">
-            <h1 class="text-2xl font-medium">To</h1>
-            <p class="my-1">
+            <h1 class="text-2xl font-medium text-white">To</h1>
+            <p class="my-1 text-white">
                 <?php 
                     if(isset($_POST['drop-up-location']))
                     {
@@ -106,8 +106,8 @@
             </p>
         </div>
         <div class="my-8 mx-3 pl-4">
-            <h1 class="text-2xl font-medium">Vehicle</h1>
-            <p class="my-1">
+            <h1 class="text-2xl font-medium text-white">Vehicle</h1>
+            <p class="my-1 text-white">
                 <?php 
                     if(isset($_POST['car-name']))
                     {
@@ -117,8 +117,8 @@
             </p>
         </div>
         <div class="my-8 mx-3 pl-4">
-            <h1 class="text-2xl font-medium ">Total Cost</h1>
-            <p class=" my-1">&#163; 
+            <h1 class="text-2xl font-medium text-white">Total Cost</h1>
+            <p class=" my-1 text-white">&#163; 
                 <?php if(isset($distance))
                     {
                         echo $distance;
