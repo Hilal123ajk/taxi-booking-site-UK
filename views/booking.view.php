@@ -8,7 +8,7 @@
 
 <!-- Booking Details  -->
 
-<div class="bookin-heading py-12 bg-teal-900">
+<div style="background-color: #176B87;" class="bookin-heading py-12">
     <h1 class="text-4xl mx-3 font-bold text-white md:w-10/12 md:mx-auto">Booking <span class="text-lime-500">Form</span></h1>
 </div>
 
@@ -22,7 +22,7 @@
         <form action="" id="form-id">
 
         
-            <div class="pickup-data-time border border-gray-600 bg-gray-100 px-2 py-8 relative my-3">
+            <div style="background-color: #64CCC5;" class="pickup-data-time border border-teal-600 bg-gray-100 px-2 py-10 relative my-3">
                 <h1 class="absolute top-0 text-xl font-medium my-2 -mb-2">Pickup date and time</h1>
                 <div class="md:flex justify-between">
                     <div>
@@ -53,7 +53,7 @@
                 </div>
             </div>
 
-            <div class="pickup-data-time border border-gray-600 bg-gray-100 px-2 py-8 relative my-3">
+            <div style="background-color: #64CCC5;" class="pickup-data-time border bg-gray-100 px-2 py-8 relative my-3">
                 <h1 class="absolute top-0 text-xl font-medium my-2 -mb-2">Personal Information</h1>
                 <div class="md:flex justify-between">
                     <div>
@@ -82,10 +82,10 @@
         </form>
 
     </div>
-    <div class="right-side w-11/12 md:w-2/6 my-8 h-1/3 mx-auto bg-teal-950 py-5">
+    <div style="background-color: #64CCC5" class="right-side w-11/12 md:w-2/6 my-8 h-1/3 mx-auto py-5">
         <div class="my-8 mx-3 pl-4">
-            <h1 class="text-2xl font-medium text-white">From</h1>
-            <p class="text-white my-1">
+            <h1 class="text-2xl font-medium">From</h1>
+            <p class=" my-1">
                 <?php 
                     if(isset($_POST['pick-up-location']))
                     {
@@ -95,8 +95,8 @@
             </p>
         </div>
         <div class="my-8 mx-3 pl-4">
-            <h1 class="text-2xl font-medium text-white">To</h1>
-            <p class="text-white my-1">
+            <h1 class="text-2xl font-medium">To</h1>
+            <p class="my-1">
                 <?php 
                     if(isset($_POST['drop-up-location']))
                     {
@@ -106,8 +106,8 @@
             </p>
         </div>
         <div class="my-8 mx-3 pl-4">
-            <h1 class="text-2xl font-medium text-white">Vehicle</h1>
-            <p class="text-white my-1">
+            <h1 class="text-2xl font-medium">Vehicle</h1>
+            <p class="my-1">
                 <?php 
                     if(isset($_POST['car-name']))
                     {
@@ -117,8 +117,8 @@
             </p>
         </div>
         <div class="my-8 mx-3 pl-4">
-            <h1 class="text-2xl font-medium text-white">Total Cost</h1>
-            <p class="text-white my-1">&#163; 
+            <h1 class="text-2xl font-medium ">Total Cost</h1>
+            <p class=" my-1">&#163; 
                 <?php if(isset($distance))
                     {
                         echo $distance;

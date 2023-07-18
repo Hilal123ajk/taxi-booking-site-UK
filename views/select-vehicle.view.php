@@ -10,7 +10,7 @@
 
 <!-- Select Vehicle Banner  -->
 
-<div style="background-color: #042F2E;" class="select-car-banner flex flex-col py-10 px-3">
+<div style="background-color: #176B87;" class="select-car-banner flex flex-col py-10 px-3">
     <h2 class="w-full text-3xl text-white font-bold md:w-10/12 mx-auto">Select your car</h2>
     <div class="w-full text-white md:w-10/12 mx-auto md:flex items-center">
         
@@ -126,7 +126,7 @@
 
     </div>
     
-    <div class="right-side w-11/12 md:w-2/6 my-8 h-1/3 mx-auto bg-teal-950 py-5">
+    <div style="background-color: #64CCC5;" class="right-side w-11/12 md:w-2/6 my-8 h-1/3 mx-auto bg-teal-950 py-5">
         <div class="my-8 mx-3 pl-4">
             <h1 class="text-2xl font-medium text-white">From</h1>
             <p class="text-white my-1"><?php
